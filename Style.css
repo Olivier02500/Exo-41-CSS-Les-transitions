@@ -1,0 +1,54 @@
+html {
+    font-size: 62.5%
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: inline-block;
+    width: 100%;
+}
+
+.container > div {
+    width: 20rem;
+    height: 20rem;
+    background: black;
+    transition: background-color, width ,height;
+    transition-duration: 6s;
+    transition-timing-function:ease-in-out ;
+    transition-delay: 500ms;
+}
+
+.container > div:hover {
+    width: 30rem;
+    height: 30rem;
+    background-color: lightgrey;
+}
+
+.test {
+    display: inline-block;
+    width: 20rem;
+    height: 20rem;
+}
+
+.test p {
+    border: 2px solid grey;
+    transition: color, font-size;
+    transition-duration: 2s;
+    transition-timing-function:linear ;
+}
+
+.test p:hover {
+    color: green;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        max-width: 300px;
+    }
+}
